@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import-normalize;
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0 !important;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: 'Poppins';
+  background-color: #f5f7fd;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +15,98 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #3b5096;
+  --backgroundColor: #f5f7fd;
+}
+
+.pageHeaderBlack {
+  color: #212121;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+
+.pageHeader {
+  color: #3b5096;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+
+.MuiDrawer-docked {
+  flex: 0 0 auto;
+  width: 5% !important;
+}
+
+.unSavedRow {
+  background-color: yellow !important;
+}
+
+.MuiTypography-h6 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.MuiSelect-icon {
+  color: white !important;
+}
+
+.MuiInput-underline:before {
+  border-bottom: none !important;
+}
+
+.MuiDialog-paperScrollPaper {
+  width: 600px !important;
+  /* height: 450px !important; */
+}
+.react-dual-listbox {
+  display: flex;
+  width: 100%;
+}
+/* Ag grid styles */
+.ag-react-container {
+  height: 100%;
+}
+
+.ag-cell {
+  border: 0.5px dotted #eee !important;
+}
+
+.ag-body-viewport {
+  overflow-y: auto !important;
+}
+
+.ag-body-horizontal-scroll-viewport {
+  overflow-x: scroll !important;
+}
+
+.ag-theme-balham .ag-root-wrapper {
+  border: none !important;
+}
+
+.ag-header-cell-label {
+  justify-content: center !important;
+}
+
+.MuiFormControl-marginNormal {
+  margin-top: 0px !important;
+  margin-bottom: 8px !important;
+  margin-left: 10px !important;
+}
+
+.MuiAutocomplete-inputRoot[class*='MuiInput-root'] .MuiAutocomplete-input {
+  padding: 0px !important;
+  font-size: 12px;
 }
